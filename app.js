@@ -37,7 +37,7 @@ app.get("/login", (req, res) => {
 });
 
 app.get("/success", (req, res) => {
-  res.send(res.status);
+  res.status(200).send("success");
 });
 
 app.listen(PORT, () => {
